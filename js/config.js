@@ -23,7 +23,7 @@ const SITE_CONFIG = {
   // --- Forms ---
   // Sign up free at https://formspree.io → create a form → paste its ID here.
   // Until then the form shows a friendly "coming soon" message.
-  formspreeId: "",                          // e.g. "xqkrgpay"
+  formspreeId: "mdarpbya",                          // e.g. "xqkrgpay"
 
   // --- Social (leave "" to hide the icon) ---
   youtube: "",
