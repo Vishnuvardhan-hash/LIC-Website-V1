@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderFeaturedPlans();
   renderAllPlans();
   renderTestimonials();
+  renderVideos();
   setupInterestForm();
   setupWhatsAppLinks();
 });
@@ -26,6 +27,7 @@ document.addEventListener("langchange", () => {
   renderFeaturedPlans();
   renderAllPlans();
   renderTestimonials();
+  renderVideos();
 });
 
 /* ---- Replace every [data-cfg] placeholder with config values ---- */
@@ -188,6 +190,37 @@ function renderTestimonials() {
     return;
   }
   items.forEach((item) => host.appendChild(testimonialCard(item)));
+}
+
+/* ---- Tutorial / explainer videos (Knowledge Centre page) ---- */
+function videoCard(item) {
+  const vid = youtubeId(item.youtubeUrl);
+  const div = document.createElement("div");
+  div.className = "video-card";
+  const title = pf(item, "title") || item.title;
+  const desc = pf(item, "description") || item.description;
+  div.innerHTML = `
+    <a href="https://www.youtube.com/watch?v=${vid}" target="_blank" rel="noopener" class="video-thumb-link">
+      <img class="video-thumb" src="https://img.youtube.com/vi/${vid}/hqdefault.jpg" alt="${title}" />
+      <span class="video-play">▶</span>
+    </a>
+    <h4 class="video-title">${title}</h4>
+    <p class="video-desc">${desc}</p>
+  `;
+  return div;
+}
+
+function renderVideos() {
+  const host = document.getElementById("videos-grid");
+  if (!host || typeof VIDEOS === "undefined") return;
+  host.innerHTML = "";
+  const items = VIDEOS.filter((v) => v.active !== false && youtubeId(v.youtubeUrl));
+  if (items.length === 0) {
+    if (host.parentElement) host.parentElement.style.display = "none";
+    return;
+  }
+  if (host.parentElement) host.parentElement.style.display = "";
+  items.forEach((item) => host.appendChild(videoCard(item)));
 }
 
 /* ---- Interest form (Formspree) ---- */

@@ -52,6 +52,8 @@ const TRANSLATIONS = {
     test_title: "What our clients say",
     test_sub: "Real families we've served over the years.",
     btn_watch_video: "Watch video",
+    videos_title: "Watch & learn",
+    videos_sub: "Short videos explaining LIC concepts simply.",
 
     label_protection: "Family Protection", label_child: "Child's Future",
     label_retirement: "Retirement &amp; Pension", label_savings: "Savings &amp; Growth",
@@ -155,6 +157,8 @@ const TRANSLATIONS = {
     test_title: "మా క్లయింట్లు ఏమి చెప్తున్నారు",
     test_sub: "సంవత్సరాలుగా మేము సేవ చేసిన నిజమైన కుటుంబాలు.",
     btn_watch_video: "వీడియో చూడండి",
+    videos_title: "చూడండి & నేర్చుకోండి",
+    videos_sub: "LIC విషయాలను సులభంగా వివరించే చిన్న వీడియోలు.",
 
     label_protection: "కుటుంబ రక్షణ", label_child: "పిల్లల భవిష్యత్తు",
     label_retirement: "పదవీ విరమణ &amp; పెన్షన్", label_savings: "పొదుపు &amp; వృద్ధి",
@@ -258,6 +262,8 @@ const TRANSLATIONS = {
     test_title: "हमारे ग्राहक क्या कहते हैं",
     test_sub: "वे परिवार जिनकी हमने वर्षों से सेवा की है।",
     btn_watch_video: "वीडियो देखें",
+    videos_title: "देखें और सीखें",
+    videos_sub: "LIC की बातें आसान भाषा में समझाने वाले छोटे वीडियो।",
 
     label_protection: "परिवार सुरक्षा", label_child: "बच्चे का भविष्य",
     label_retirement: "रिटायरमेंट और पेंशन", label_savings: "बचत और वृद्धि",
