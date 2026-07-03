@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become an LIC Agent | Build a Career Under an Experienced Development Officer</title>
+  <meta name="description" content="Start your career as an LIC agent with full training and mentoring under a Development Officer with 25+ years of experience and a team of 30 agents." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Public+Sans:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name" data-cfg="name">Agent Name</span>
+        <span class="brand-tag" data-cfg="designation">LIC Development Officer</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+      <nav class="nav">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="plans.html" data-i18n="nav_plans">LIC Plans</a>
+        <a href="about.html" data-i18n="nav_about">About &amp; Awards</a>
+        <a href="knowledge.html" data-i18n="nav_knowledge">Knowledge Centre</a>
+        <a href="become-agent.html" class="active" data-i18n="nav_agent">Become an Agent</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap split">
+      <div>
+        <h2 class="section-title" data-i18n="agent_title">Build a career that pays you for years, not just once</h2>
+        <hr class="gold-rule" />
+        <p data-i18n="agent_p1">Income compounds.</p>
+        <p style="margin-top:14px;" data-i18n="agent_p2">Suits many people.</p>
+        <h3 style="font-family:var(--ff-display); color:var(--navy); margin:26px 0 10px;" data-i18n="agent_why_title">Why join our team?</h3>
+        <p data-i18n="agent_why_p">Training and mentoring.</p>
+      </div>
+
+      <div class="form-card">
+        <h2 style="font-family:var(--ff-display); color:var(--navy); margin-bottom:6px;" data-i18n="agent_form_title">Apply to join</h2>
+        <p style="font-size:.9rem; color:var(--ink-soft); margin-bottom:20px;" data-i18n="agent_form_sub">We will call you.</p>
+        <form id="interest-form">
+          <input type="hidden" name="form_type" value="agent-application" />
+          <div class="form-row">
+            <label for="a-name" data-i18n="f_name">Full name</label>
+            <input id="a-name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="a-phone" data-i18n="f_phone">Phone number</label>
+            <input id="a-phone" name="phone" type="tel" pattern="[0-9+ ]{10,15}" required />
+          </div>
+          <div class="form-row">
+            <label for="a-email" data-i18n="f_email">Email</label>
+            <input id="a-email" name="email" type="email" />
+          </div>
+          <div class="form-row">
+            <label for="a-msg" data-i18n="f_about">Tell us briefly about yourself</label>
+            <textarea id="a-msg" name="message" rows="3" data-i18n-ph="ph_agent_msg" placeholder="e.g. I'm 28, working in retail, looking for additional income…"></textarea>
+          </div>
+          <button class="btn btn-gold" type="submit" data-i18n="f_submit_app">Submit application</button>
+          <div id="form-status" class="form-status"></div>
+          <p class="form-note" data-i18n="agent_note">Basic eligibility info.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2 class="section-title" data-i18n="how_title">How it works</h2>
+      <hr class="gold-rule" />
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="tl-year" data-i18n="s1_y">Step 1</div>
+          <h3 data-i18n="s1_t">Meet us</h3>
+          <p data-i18n="s1_d">Frank talk.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-year" data-i18n="s2_y">Step 2</div>
+          <h3 data-i18n="s2_t">Training &amp; IRDAI exam</h3>
+          <p data-i18n="s2_d">Training info.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-year" data-i18n="s3_y">Step 3</div>
+          <h3 data-i18n="s3_t">Licence &amp; first policies</h3>
+          <p data-i18n="s3_d">Licence info.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-year" data-i18n="s4_y">Ongoing</div>
+          <h3 data-i18n="s4_t">Grow with the team</h3>
+          <p data-i18n="s4_d">Growth info.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4 data-cfg="name">Agent Name</h4>
+        <p style="font-size:.9rem;">
+          <span data-cfg="designation">LIC Development Officer</span><br />
+          <span data-cfg="branch">LIC Branch Office</span><br />
+          <span data-cfg="address">Office address</span><br />
+          Code: <span data-cfg="license">[Code]</span>
+        </p>
+      </div>
+      <div>
+        <h4 data-i18n="footer_quicklinks">Quick links</h4>
+        <a href="plans.html" data-i18n="nav_plans">LIC Plans</a>
+        <a href="about.html" data-i18n="nav_about">About &amp; Awards</a>
+        <a href="knowledge.html" data-i18n="nav_knowledge">Knowledge Centre</a>
+        <a href="become-agent.html" data-i18n="nav_agent">Become an Agent</a>
+      </div>
+      <div>
+        <h4 data-i18n="nav_contact">Contact</h4>
+        <a data-cfg-href="tel" href="#"><span data-cfg="phone">Phone</span></a>
+        <a data-cfg-href="mail" href="#"><span data-cfg="email">Email</span></a>
+        <a data-wa="" href="#" data-i18n="footer_wa">WhatsApp us</a>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      This is the personal website of <span data-cfg="name">Agent Name</span>,
+      <span data-cfg="designation">LIC Development Officer</span>. It is not the official
+      website of Life Insurance Corporation of India. Agent recruitment is subject to
+      LIC's eligibility norms and IRDAI licensing requirements. Earnings depend entirely
+      on individual performance; no income is guaranteed. © <span data-cfg="year">2026</span>. All rights reserved.
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa="Hi, I'm interested in becoming an LIC agent. Please share details." href="#">💬 WhatsApp</a>
+
+  <script src="js/config.js"></script>
+  <script src="data/policies.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Get a Free LIC Premium Quote</title>
+  <meta name="description" content="Ask about any LIC plan, get a personalised premium quote, or request policy servicing help. We respond within 24 hours." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Public+Sans:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name" data-cfg="name">Agent Name</span>
+        <span class="brand-tag" data-cfg="designation">LIC Development Officer</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+      <nav class="nav">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="plans.html" data-i18n="nav_plans">LIC Plans</a>
+        <a href="about.html" data-i18n="nav_about">About &amp; Awards</a>
+        <a href="knowledge.html" data-i18n="nav_knowledge">Knowledge Centre</a>
+        <a href="become-agent.html" data-i18n="nav_agent">Become an Agent</a>
+        <a href="contact.html" class="active" data-i18n="nav_contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap split">
+      <div>
+        <h2 class="section-title" data-i18n="contact_title">Tell us what you need</h2>
+        <hr class="gold-rule" />
+        <p data-i18n="contact_p">Send your question here.</p>
+        <p style="margin:22px 0;">
+          <a class="btn btn-wa" data-wa="" href="#" data-i18n="btn_wa_chat_now">💬 Chat on WhatsApp now</a>
+        </p>
+        <p style="font-size:.95rem;">
+          <strong data-i18n="contact_phone">Phone:</strong> <a data-cfg-href="tel" href="#"><span data-cfg="phone">Phone</span></a><br />
+          <strong data-i18n="contact_email">Email:</strong> <a data-cfg-href="mail" href="#"><span data-cfg="email">Email</span></a><br />
+          <strong data-i18n="contact_office">Office:</strong> <span data-cfg="address">Office address</span>
+        </p>
+        <!-- Once his Google Business Profile exists, embed the map here:
+             Google Maps → your business → Share → Embed a map → paste the iframe. -->
+      </div>
+
+      <div class="form-card">
+        <h2 style="font-family:var(--ff-display); color:var(--navy); margin-bottom:6px;" data-i18n="form_enquiry_title">Send an enquiry</h2>
+        <p style="font-size:.9rem; color:var(--ink-soft); margin-bottom:20px;" data-i18n="form_enquiry_sub">Free, no obligation.</p>
+        <form id="interest-form">
+          <input type="hidden" name="form_type" value="customer-enquiry" />
+          <div class="form-row">
+            <label for="c-name" data-i18n="f_name">Full name</label>
+            <input id="c-name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="c-phone" data-i18n="f_phone">Phone number</label>
+            <input id="c-phone" name="phone" type="tel" pattern="[0-9+ ]{10,15}" required />
+          </div>
+          <div class="form-row">
+            <label for="c-email" data-i18n="f_email_opt">Email (optional)</label>
+            <input id="c-email" name="email" type="email" />
+          </div>
+          <div class="form-row">
+            <label for="c-need" data-i18n="f_need">What are you looking for?</label>
+            <select id="c-need" name="need">
+              <option data-i18n="opt_1">Protecting my family (term insurance)</option>
+              <option data-i18n="opt_2">My child's education / marriage</option>
+              <option data-i18n="opt_3">Retirement / pension plan</option>
+              <option data-i18n="opt_4">Savings &amp; guaranteed returns</option>
+              <option data-i18n="opt_5">Health / cancer cover</option>
+              <option data-i18n="opt_6">Help with an existing policy</option>
+              <option data-i18n="opt_7">Something else</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="c-msg" data-i18n="f_msg">Your message</label>
+            <textarea id="c-msg" name="message" rows="3" data-i18n-ph="ph_contact_msg" placeholder="e.g. I'm 34, married with one child, looking for a plan around ₹3,000/month…"></textarea>
+          </div>
+          <button class="btn btn-gold" type="submit" data-i18n="f_send">Send enquiry</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4 data-cfg="name">Agent Name</h4>
+        <p style="font-size:.9rem;">
+          <span data-cfg="designation">LIC Development Officer</span><br />
+          <span data-cfg="branch">LIC Branch Office</span><br />
+          <span data-cfg="address">Office address</span><br />
+          Code: <span data-cfg="license">[Code]</span>
+        </p>
+      </div>
+      <div>
+        <h4 data-i18n="footer_quicklinks">Quick links</h4>
+        <a href="plans.html" data-i18n="nav_plans">LIC Plans</a>
+        <a href="about.html" data-i18n="nav_about">About &amp; Awards</a>
+        <a href="knowledge.html" data-i18n="nav_knowledge">Knowledge Centre</a>
+        <a href="become-agent.html" data-i18n="nav_agent">Become an Agent</a>
+      </div>
+      <div>
+        <h4 data-i18n="nav_contact">Contact</h4>
+        <a data-cfg-href="tel" href="#"><span data-cfg="phone">Phone</span></a>
+        <a data-cfg-href="mail" href="#"><span data-cfg="email">Email</span></a>
+        <a data-wa="" href="#" data-i18n="footer_wa">WhatsApp us</a>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      This is the personal website of <span data-cfg="name">Agent Name</span>,
+      <span data-cfg="designation">LIC Development Officer</span>. It is not the official
+      website of Life Insurance Corporation of India. For official information visit
+      licindia.in. Insurance is the subject matter of solicitation. © <span data-cfg="year">2026</span>. All rights reserved.
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa="" href="#">💬 WhatsApp</a>
+
+  <script src="js/config.js"></script>
+  <script src="data/policies.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
